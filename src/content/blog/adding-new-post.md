@@ -1,8 +1,8 @@
 ---
-author: Sat Naing
+author: 秦超
 pubDatetime: 2022-09-23T15:22:00Z
 modDatetime: 2023-12-21T09:12:47.400Z
-title: Adding new posts in AstroPaper theme
+title: 学有所成
 slug: adding-new-posts-in-astropaper-theme
 featured: true
 draft: false
@@ -13,158 +13,134 @@ description:
   theme.
 ---
 
-Here are some rules/recommendations, tips & ticks for creating new posts in AstroPaper blog theme.
 
-## Table of contents
 
-## Frontmatter
+学有所成.
 
-Frontmatter is the main place to store some important information about the blog post (article). Frontmatter lies at the top of the article and is written in YAML format. Read more about frontmatter and its usage in [astro documentation](https://docs.astro.build/en/guides/markdown-content/).
+## 秦超
 
-Here is the list of frontmatter property for each post.
+## 学有所成
 
-| Property           | Description                                                                                 | Remark                                        |
-| ------------------ | ------------------------------------------------------------------------------------------- | --------------------------------------------- |
-| **_title_**        | Title of the post. (h1)                                                                     | required<sup>\*</sup>                         |
-| **_description_**  | Description of the post. Used in post excerpt and site description of the post.             | required<sup>\*</sup>                         |
-| **_pubDatetime_**  | Published datetime in ISO 8601 format.                                                      | required<sup>\*</sup>                         |
-| **_modDatetime_**  | Modified datetime in ISO 8601 format. (only add this property when a blog post is modified) | optional                                      |
-| **_author_**       | Author of the post.                                                                         | default = SITE.author                         |
-| **_slug_**         | Slug for the post. This field is optional but cannot be an empty string. (slug: ""❌)       | default = slugified file name                 |
-| **_featured_**     | Whether or not display this post in featured section of home page                           | default = false                               |
-| **_draft_**        | Mark this post 'unpublished'.                                                               | default = false                               |
-| **_tags_**         | Related keywords for this post. Written in array yaml format.                               | default = others                              |
-| **_ogImage_**      | OG image of the post. Useful for social media sharing and SEO.                              | default = SITE.ogImage or generated OG image  |
-| **_canonicalURL_** | Canonical URL (absolute), in case the article already exists on other source.               | default = `Astro.site` + `Astro.url.pathname` |
+学无止境 [学有所成](https://43322.cn/).
 
-> Tip! You can get ISO 8601 datetime by running `new Date().toISOString()` in the console. Make sure you remove quotes though.
+淡泊明志 宁静致远
 
-Only `title`, `description` and `pubDatetime` fields in frontmatter must be specified.
+| C语言           | 数学                                                                     | 英语                                        |
+| ------------------ | ------------------------------------------------------------------------------- | --------------------------------------------- |
+| **_C语言基础知识_**        | 函数、极限、连续与间断                                                         | 主谓一致<sup>\*</sup>                         |
+| **_顺序结构程序设计_**  | 一元函数微分学 | 简单句型<sup>\*</sup>                         |
+| **_输入输出函数_**  | 一元函数积分学                                          | 倒装<sup>\*</sup>                         |
+| **_选择结构程序设计_**       | 无穷级数                                                             | 虚拟语气                         |
+| **_循环结构程序设计_**     | 微分方程                             | 时态                     |
+| **_数组_**     | 多元函数微积分学               | 语态                               |
+| **_指针_**        | 空间向量与解析几何                                                   | 从句                               |
+| **_字符数组_**         | 线性代数                   | 非谓语                              |
+| **_函数_**      | 概率论                  | 阅读理解、翻译、写作  |
+| **_结构体-文件_** | 重难点   | 座右铭 `坚持不懈` + `努力` |
 
-Title and description (excerpt) are important for search engine optimization (SEO) and thus AstroPaper encourages to include these in blog posts.
+努力再努力 `Good`, `Great` 超超 `冲冲冲` QinChao
 
-`slug` is the unique identifier of the url. Thus, `slug` must be unique and different from other posts. The whitespace of `slug` should to be separated with `-` or `_` but `-` is recommended. Slug is automatically generated using the blog post file name. However, you can define your `slug` as a frontmatter in your blog post.
+学有所成
 
-For example, if the blog file name is `adding-new-post.md` and you don't specify the slug in your frontmatter, Astro will automatically create a slug for the blog post using the file name. Thus, the slug will be `adding-new-post`. But if you specify the `slug` in the frontmatter, this will override the default slug. You can read more about this in [Astro Docs](https://docs.astro.build/en/guides/content-collections/#defining-custom-slugs).
+`学有所成` , `学无止境` `j加油`  `必胜` or ``  `` 
 
-If you omit `tags` in a blog post (in other words, if no tag is specified), the default tag `others` will be used as a tag for that post. You can set the default tag in the `/src/content/config.ts` file.
+`加油` `秦超` `Great` .
 
 ```ts
-// src/content/config.ts
-export const blogSchema = z.object({
+// 上岸
+#include <stdio.h>
   // ---
-  draft: z.boolean().optional(),
-  tags: z.array(z.string()).default(["others"]), // replace "others" with whatever you want
+  int main()
+{
+printf("上岸");
+return 0; // 加油
   // ---
-});
+};
 ```
 
-### Sample Frontmatter
+### 上岸
 
-Here is the sample frontmatter for a post.
+即使慢，驰而不息，纵令落后，纵令失败，但一定可以达到他所向往的目标。
 
-```yaml
-# src/content/blog/sample-post.md
+# 与其临渊羡鱼，不如退而结网。
 ---
-title: The title of the post
-author: your name
-pubDatetime: 2022-09-21T05:17:19Z
-slug: the-title-of-the-post
-featured: true
-draft: false
-tags:
-  - some
-  - example
-  - tags
-ogImage: ""
-description: This is the example description of the example post.
-canonicalURL: https://example.org/my-article-was-already-posted-here
+人生恰恰像马拉松赛跑一样
 ---
+古之立大事者，不惟有超世之才，亦必有坚忍不拔之志。
+
+## 人在逆境里比在顾境里更能坚强不屈，遭厄运时比交好运时更容易保全身心。
+
+`道足以忘物之得春，志足以一气之盛衰。` 
+
+对于不屈不挠的人来说，没有失败这回事。
+
+```md 鸟欲高飞先振翅，人求上进先读书。
+---
+# 即使跌倒一百次，也要一百零一次地站起来。
+---
+
+壮心未与年俱老，死去犹能作鬼雄。
+
+## 良机对于懒惰没有用，但勤劳可以使最平常的机遇变良机。
+
+<!-- 伟大的事业，需要决心，能力，组织和责任感。 -->
 ```
 
-## Adding table of contents
+## 我从来不知道什么是苦闷，失败了再来，前途是自己努力创造出来的。
 
-By default, a post (article) does not include any table of contents (toc). To include toc, you have to specify it in a specific way.
+意志若是屈从，不论程度如何，它都帮助了暴力。
 
-Write `Table of contents` in h2 format (## in markdown) and place it where you want it to be appeared on the post.
+勤劳一日，可得一夜安眠；勤劳一生，可得幸福长眠。
 
-For instance, if you want to place your table of contents just under the intro paragraph (like I usually do), you can do that in the following way.
+## 自己要先看得起自己，别人才会看得起你。
+
+决定一个人的一生，以及整个命运的，只是一瞬之间。
+
+> 学有所成 [勤奋](https://43322.cn).
+
+### 学 `有` 所成
+
+ [百度](https://baidu.com/).
+
+燕雀戏藩柴，安识鸿鹄游。`在希望与失望的决斗中，如果你用勇气与坚决的双手紧握着，胜利必属于希望。`) 
+
+`日日行，不怕千万里；常常做，不怕千万事。`  `熟读唐诗三百首，不会作诗也会吟。`.
 
 ```md
----
-# some frontmatter
----
+熟读唐诗三百首，不会作诗也会吟。
+> 胜利在望
 
-Here are some recommendations, tips & ticks for creating new posts in AstroPaper blog theme.
-
-## Table of contents
-
-<!-- the rest of the post -->
 ```
 
-## Headings
+> `聪明出于勤奋，天才在于积累。` `坚强的信念能赢得强者的心，并使他们变得更坚强。` 
 
-There's one thing to note about headings. The AstroPaper blog posts use title (title in the frontmatter) as the main heading of the post. Therefore, the rest of the heading in the post should be using h2 \~ h6.
+### 让我们将事前的忧虑，换为事前的思考和计划吧。
 
-This rule is not mandatory, but highly recommended for visual, accessibility and SEO purposes.
+`意志目标不在自然中存在，而在生命中蕴藏。` `富贵不能淫，贫贱不能移，威武不能屈。` 
 
-## Storing Images for Blog Content
+  [努力一生](https://www.43322.cn) 
 
-Here are two methods for storing images and displaying them inside a markdown file.
-
-> Note! If it's a requirement to style optimized images in markdown you should [use MDX](https://docs.astro.build/en/guides/images/#images-in-mdx-files).
-
-### Inside `src/assets/` directory (recommended)
-
-You can store images inside `src/assets/` directory. These images will be automatically optimized by Astro through [Image Service API](https://docs.astro.build/en/reference/image-service-reference/).
-
-You can use relative path or alias path (`@assets/`) to serve these images.
-
-Example: Suppose you want to display `example.jpg` whose path is `/src/assets/images/example.jpg`.
+`学到很多东西的诀窍，就是一下子不要学很多。`   `人生并非游戏，因此我们没有权利随意放弃它。`.
 
 ```md
-![something](@assets/images/example.jpg)
+伟大的作品不是靠力量，而是靠坚持来完成的。
 
-<!-- OR -->
 
-![something](../../assets/images/example.jpg)
-
-<!-- Using img tag or Image component won't work ❌ -->
-<img src="@assets/images/example.jpg" alt="something">
-<!-- ^^ This is wrong -->
+坚持意志伟大的事业需要始终不渝的精神。
 ```
 
-> Technically, you can store images inside any directory under `src`. In here, `src/assets` is just a recommendation.
+## 人生的价值，即以其人对于当代所做的工作为尺度。
 
-### Inside `public` directory
+### 问渠哪得清如许，为有源头活水来。
 
-You can store images inside the `public` directory. Keep in mind that images stored in the `public` directory remain untouched by Astro, meaning they will be unoptimized and you need to handle image optimization by yourself.
+`穷且益坚，不坠青云之志。`
 
-For these images, you should use an absolute path; and these images can be displayed using [markdown annotation](https://www.markdownguide.org/basic-syntax/#images-1) or [HTML img tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img).
 
-Example: Assume `example.jpg` is located at `/public/assets/images/example.jpg`.
+- [必将胜利](https://43322.cn/)
+- [qinchao](https://43322.cn/)
 
-```md
-![something](/assets/images/example.jpg)
+### 有教养的头脑的第一个标志就是善于提问。
 
-<!-- OR -->
+ **_读一本好书，就如同和一个高尚的人在交谈。_** 
 
-<img src="/assets/images/example.jpg" alt="something">
-```
-
-## Bonus
-
-### Image compression
-
-When you put images in the blog post (especially for images under `public` directory), it is recommended that the image is compressed. This will affect the overall performance of the website.
-
-My recommendation for image compression sites.
-
-- [TinyPng](https://tinypng.com/)
-- [TinyJPG](https://tinyjpg.com/)
-
-### OG Image
-
-The default OG image will be placed if a post does not specify the OG image. Though not required, OG image related to the post should be specify in the frontmatter. The recommended size for OG image is **_1200 X 640_** px.
-
-> Since AstroPaper v1.4.0, OG images will be generated automatically if not specified. Check out [the announcement](https://astro-paper.pages.dev/posts/dynamic-og-image-generation-in-astropaper-blog-posts/).
+>  [每一点滴的进展都是缓慢而艰巨的，一个人一次只能着手解决一项有限的目标。](https://43322.cn/).
