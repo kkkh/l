@@ -3,34 +3,34 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-AstroPaper is a minimal, responsive and SEO-friendly Astro blog theme. I designed and crafted this based on [my personal blog](https://satnaing.dev/blog).
+学有所成[上岸]（https://43322/cn）
 
-This theme is aimed to be accessible out of the box. Light and dark mode are supported by
-default and additional color schemes can also be configured.
 
-This theme is self-documented \_ which means articles/posts in this theme can also be considered as documentations. So, see the documentation for more info.
+
+
+
 
 <div>
   <img src="/assets/dev.svg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
 </div>
 
-## Tech Stack
+## 淡泊明志 宁静致远
 
-This theme is written in vanilla JavaScript (+ TypeScript for type checking) and a little bit of ReactJS for some interactions. TailwindCSS is used for styling; and Markdown is used for blog contents.
+这句话出自《淮南子·主术训》：“夫淡泊以明志，宁静以致远。”这里“淡泊明志”指的是通过简朴的生活来澄清自己的意志和目标，“宁静致远”则是说通过保持内心的平静来达到远大的目标。这句话强调了内心世界的修养和对外在物质欲望的淡泊，认为这是实现远大抱负的重要方式。
 
-## Features
+简而言之，这句话鼓励我们保持简单和平静的生活方式，以助于思考清晰和目标远大。在现代社会，这种思想依然具有很高的价值，帮助人们在复杂纷扰的环境中保持清晰的人生方向和精神追求。
 
-Here are certain features of this site.
+## 平安喜乐
 
-- fully responsive and accessible
-- SEO-friendly
-- light & dark mode
-- fuzzy search
-- super fast performance
-- draft posts
-- pagination
-- sitemap & rss feed
-- highly customizable
+“平安喜乐”是一个常见的祝愿，表达了对他人福祉的美好期望。这四个字简单但富含深意，代表着希望对方生活中充满和平与快乐。在中国文化中，这样的祝福语常用于节日、庆典、亲友间的问候以及书信的结尾。
 
-If you like this theme, you can star/contribute to the [repo](https://github.com/satnaing/astro-paper).  
-Or you can even give any feedback via my [email](mailto:contact@satnaing.dev).
+“平安”意味着无事故、无灾难、身体健康，而“喜乐”则是内心的快乐和满足。这种祝福适用于多种场合，无论是生日、新年、结婚等都非常合适，寓意深远且普适。希望你也平安喜乐！
+
+## 有志者事竟成
+“有志者事竟成”是一句中国古语，出自《后汉书·耿弇传》。这句话的意思是，有决心和志向的人最终能够实现他们的目标。这里的“志”指的是一个人的意志、决心或目标，“竟成”则意味着最终达成或完成。
+
+这句话强调了坚持和毅力的重要性。它告诉我们，只要有明确的目标和坚定的决心，再加上不懈的努力和适当的方法，无论遇到多大的困难和挑战，最终都有可能取得成功。
+
+在现代，这句话仍被广泛用于激励人们面对挑战，不放弃追求自己的梦想和目标。无论是在学业、职业还是个人生活中，这种积极向上的态度都是非常宝贵的。
+永不言弃 [秦超](https://43322.cn).  
+与我取得联系 [邮箱](mailto:qinchao@43322.cn) [备用](mailto:56967916@qq.com)
